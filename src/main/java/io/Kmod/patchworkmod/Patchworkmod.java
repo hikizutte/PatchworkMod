@@ -29,6 +29,8 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
 
+import java.io.ObjectInputStream;
+
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Patchworkmod.MODID)
 public class Patchworkmod {
@@ -81,7 +83,8 @@ public class Patchworkmod {
         modEventBus.addListener(this::addCreative);
 
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        //ObjectInputStream.FieldValues ModLoadingContext;
+        //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -89,12 +92,12 @@ public class Patchworkmod {
         LOGGER.info("HELLO FROM COMMON SETUP");
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
 
-        if (Config.logDirtBlock)
-            LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
-
-        LOGGER.info(Config.magicNumberIntroduction + Config.magicNumber);
-
-        Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
+//        if (Config.logDirtBlock)
+//            LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
+//
+//        LOGGER.info(Config.magicNumberIntroduction + Config.magicNumber);
+//
+//        Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
     }
 
     // Add the example block item to the building blocks tab
