@@ -2,7 +2,6 @@ package io.Kmod.patchworkmod.item.tool;
 
 import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Tier;
 
 public class ToolObsidianAxe extends AxeItem {
     public ToolObsidianAxe() {

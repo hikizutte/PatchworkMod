@@ -1,10 +1,6 @@
 package io.Kmod.patchworkmod.item;
 
-import com.mojang.blaze3d.shaders.Effect;
 import io.Kmod.patchworkmod.regi.PatchworkModTags;
-import net.minecraft.world.InteractionHand;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;

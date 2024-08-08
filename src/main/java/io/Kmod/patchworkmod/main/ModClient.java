@@ -5,12 +5,10 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.registries.RegistryObject;
 
 import io.Kmod.patchworkmod.regi.PatchworkModItems;
-import io.Kmod.patchworkmod.main.Patchworkmod;
 
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.item.CrossbowItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -21,9 +19,7 @@ public class ModClient {
 
     @SubscribeEvent
     public static void setup(final FMLClientSetupEvent event) {
-        event.enqueueWork(() -> {
-            PatchworkModItems.ITEMS.getEntries().forEach(ModClient::registerBowResourceLocations);
-        });
+        event.enqueueWork(() -> PatchworkModItems.ITEMS.getEntries().forEach(ModClient::registerBowResourceLocations));
     }
 
     @SubscribeEvent
@@ -44,10 +40,8 @@ public class ModClient {
                     }
                 });
         ItemProperties.register(item.get(), new ResourceLocation("pulling"),
-                (p_174630_, p_174631_, p_174632_, p_174633_) -> {
-                    return p_174632_ != null && p_174632_.isUsingItem() && p_174632_.getUseItem() == p_174630_ ? 1.0F
-                            : 0.0F;
-                });
+                (p_174630_, p_174631_, p_174632_, p_174633_) -> p_174632_ != null && p_174632_.isUsingItem() && p_174632_.getUseItem() == p_174630_ ? 1.0F
+                        : 0.0F);
     }
 /*
     private static void registerCrossbowResourceLocations(RegistryObject<Item> item) {

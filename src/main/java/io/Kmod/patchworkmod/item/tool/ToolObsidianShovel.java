@@ -1,9 +1,7 @@
 package io.Kmod.patchworkmod.item.tool;
 
-import net.minecraft.commands.arguments.item.ItemParser;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ShovelItem;
-import net.minecraft.world.item.Tier;
 
 public class ToolObsidianShovel extends ShovelItem {
     public ToolObsidianShovel() {

@@ -3,8 +3,6 @@ package io.Kmod.patchworkmod.item.weapon;
 import io.Kmod.patchworkmod.regi.PatchworkModItems;
 import net.minecraft.world.item.crafting.Ingredient;
 
-import java.util.function.Supplier;
-
 public enum BowTiers implements BowTier{
 
     OBSIDIAN(384 * 12, 1f, 5, Ingredient.of(PatchworkModItems.OBSIDIAN_INGOT.get()));

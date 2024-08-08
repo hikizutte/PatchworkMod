@@ -4,12 +4,10 @@ import io.Kmod.patchworkmod.main.Patchworkmod;
 import io.Kmod.patchworkmod.regi.PatchworkModItems;
 import io.Kmod.patchworkmod.regi.PatchworkModTags;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import  net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.common.TierSortingRegistry;
-import org.apache.logging.log4j.core.jackson.ListOfMapEntryDeserializer;
 
 import java.util.List;
 

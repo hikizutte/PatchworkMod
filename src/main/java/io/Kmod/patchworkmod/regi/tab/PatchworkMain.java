@@ -1,10 +1,7 @@
 package io.Kmod.patchworkmod.regi.tab;
 
-import java.util.List;
-
 import io.Kmod.patchworkmod.regi.PatchworkModItems;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 
 public class PatchworkMain {
 

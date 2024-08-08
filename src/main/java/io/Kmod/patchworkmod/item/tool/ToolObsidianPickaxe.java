@@ -1,7 +1,6 @@
 package io.Kmod.patchworkmod.item.tool;
 
 import net.minecraft.world.item.PickaxeItem;
-import net.minecraft.world.item.Tier;
 
 public class ToolObsidianPickaxe extends PickaxeItem {
 
