@@ -1,10 +1,10 @@
 package io.Kmod.patchworkmod.regi;
 
 import io.Kmod.patchworkmod.item.ItemObsidianIngot;
-import io.Kmod.patchworkmod.item.aromor.ArmorObsidianBoots;
-import io.Kmod.patchworkmod.item.aromor.ArmorObsidianChestplate;
-import io.Kmod.patchworkmod.item.aromor.ArmorObsidianHelmet;
-import io.Kmod.patchworkmod.item.aromor.ArmorObsidianLeggings;
+import io.Kmod.patchworkmod.item.armor.ArmorObsidianBoots;
+import io.Kmod.patchworkmod.item.armor.ArmorObsidianChestplate;
+import io.Kmod.patchworkmod.item.armor.ArmorObsidianHelmet;
+import io.Kmod.patchworkmod.item.armor.ArmorObsidianLeggings;
 import io.Kmod.patchworkmod.item.tool.ToolObsidianAxe;
 import io.Kmod.patchworkmod.item.tool.ToolObsidianHoe;
 import io.Kmod.patchworkmod.item.tool.ToolObsidianPickaxe;

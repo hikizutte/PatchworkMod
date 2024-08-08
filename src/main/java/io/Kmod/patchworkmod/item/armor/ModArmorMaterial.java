@@ -1,4 +1,4 @@
-package io.Kmod.patchworkmod.item.aromor;
+package io.Kmod.patchworkmod.item.armor;
 
 
 import io.Kmod.patchworkmod.main.Patchworkmod;
