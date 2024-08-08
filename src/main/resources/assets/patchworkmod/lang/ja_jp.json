@@ -1,0 +1,18 @@
+{
+  "itemGroup.patchwork_main" : "パッチワーク",
+  "itemGroup.patchwork_equipments": "パッチワーク装備品",
+
+  "item.patchworkmod.damage_tooltip" : "投射物の追加ダメージ",
+
+  "item.patchworkmod.obsidian_ingot" : "黒曜石インゴット",
+  "item.patchworkmod.obsidian_sword" : "黒曜石の剣",
+  "item.patchworkmod.obsidian_pickaxe" : "黒曜石のツルハシ",
+  "item.patchworkmod.obsidian_axe" : "黒曜石の斧",
+  "item.patchworkmod.obsidian_shovel" : "黒曜石のシャベル",
+  "item.patchworkmod.obsidian_hoe" : "黒曜石のクワ",
+  "item.patchworkmod.obsidian_helmet" : "黒曜石のヘルメット",
+  "item.patchworkmod.obsidian_chestplate" : "黒曜石のチェストプレート",
+  "item.patchworkmod.obsidian_leggings" : "黒曜石のレギンス",
+  "item.patchworkmod.obsidian_boots" : "黒曜石のブーツ",
+  "item.patchworkmod.obsidian_bow" : "黒曜石の弓"
+}
