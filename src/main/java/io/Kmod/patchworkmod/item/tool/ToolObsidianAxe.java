@@ -5,6 +5,6 @@ import net.minecraft.world.item.Item;
 
 public class ToolObsidianAxe extends AxeItem {
     public ToolObsidianAxe() {
-        super(PatchworkModTiers.OBSIDIAN, 6F, -3.0F, new Item.Properties().fireResistant());
+        super(PatchworkModTiers.OBSIDIAN, 6F, -3.2F, new Item.Properties().fireResistant());
     }
 }
