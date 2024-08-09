@@ -9,11 +9,12 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class ItemObsidianIngot extends Item {
 
     @Override
-    public void inventoryTick(ItemStack stack, Level world, Entity entity, int slot, boolean bool) {
+    public void inventoryTick(@NotNull ItemStack stack, @NotNull Level world, @NotNull Entity entity, int slot, boolean bool) {
         super.inventoryTick(stack, world, entity, slot, bool);
         if(entity instanceof  Player){
             Player player = (Player) entity;

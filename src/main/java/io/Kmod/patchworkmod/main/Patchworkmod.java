@@ -4,8 +4,6 @@ import com.mojang.logging.LogUtils;
 import io.Kmod.patchworkmod.regi.PatchworkModItems;
 import io.Kmod.patchworkmod.regi.tab.PatchworkModTab;
 import net.minecraft.client.Minecraft;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -16,7 +14,6 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import org.slf4j.Logger;
 
@@ -27,8 +24,6 @@ public class Patchworkmod {
     public static final String MODID = "patchworkmod";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-    public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, MODID);
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
     public static final IEventBus PATCHWORKMOD_EVENT_BUS = FMLJavaModLoadingContext.get().getModEventBus();
     public static final IEventBus EVENT_BUS = MinecraftForge.EVENT_BUS;
 
@@ -37,6 +32,7 @@ public class Patchworkmod {
 
         //アイテム登録の設定
         PatchworkModItems.ITEMS.register(PATCHWORKMOD_EVENT_BUS);
+        PatchworkModItems.BOWS.register(PATCHWORKMOD_EVENT_BUS);
         //クリエイティブタブの追加
         PatchworkModTab.MOD_TABS.register(PATCHWORKMOD_EVENT_BUS);
     }

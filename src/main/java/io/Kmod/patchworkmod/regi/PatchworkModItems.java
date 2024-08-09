@@ -19,6 +19,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class PatchworkModItems {
 
+    public static final DeferredRegister<Item> BOWS = DeferredRegister.create(ForgeRegistries.ITEMS, Patchworkmod.MODID);
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Patchworkmod.MODID);
 
     public static final RegistryObject<Item> OBSIDIAN_INGOT = ITEMS.register("obsidian_ingot", ItemObsidianIngot::new);
@@ -32,5 +33,5 @@ public class PatchworkModItems {
     public static final RegistryObject<Item> OBSIDIAN_CHESTPLATE = ITEMS.register("obsidian_chestplate", ArmorObsidianChestplate::new);
     public static final RegistryObject<Item> OBSIDIAN_LEGGINGS = ITEMS.register("obsidian_leggings", ArmorObsidianLeggings::new);
     public static final RegistryObject<Item> OBSIDIAN_BOOTS = ITEMS.register("obsidian_boots", ArmorObsidianBoots::new);
-    public static final RegistryObject<Item> OBSIDIAN_BOW = ITEMS.register("obsidian_bow", WeaponObsidianBow::new);
+    public static final RegistryObject<Item> OBSIDIAN_BOW = BOWS.register("obsidian_bow", WeaponObsidianBow::new);
 }

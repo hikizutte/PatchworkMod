@@ -19,24 +19,24 @@ public class ModClient {
 
     @SubscribeEvent
     public static void setup(final FMLClientSetupEvent event) {
-        event.enqueueWork(() -> PatchworkModItems.ITEMS.getEntries().forEach(ModClient::registerBowResourceLocations));
+        event.enqueueWork(() -> PatchworkModItems.BOWS.getEntries().forEach(ModClient::registerBowResourceLocations));
     }
 
     @SubscribeEvent
     public static void buildCreativeModeTabContents(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.COMBAT) {
-            Patchworkmod.ITEMS.getEntries().forEach(bow -> event.accept(bow.get()));
+            PatchworkModItems.BOWS.getEntries().forEach(bow -> event.accept(bow.get()));
         }
     }
 
     private static void registerBowResourceLocations(RegistryObject<Item> item) {
         ItemProperties.register(item.get(), new ResourceLocation("pull"),
-                (p_174635_, p_174636_, p_174637_, p_174638_) -> {
-                    if (p_174637_ == null) {
+                (stack, world, entity, p_174638_) -> {
+                    if (entity == null) {
                         return 0.0F;
                     } else {
-                        return p_174637_.getUseItem() != p_174635_ ? 0.0F
-                                : (float) (p_174635_.getUseDuration() - p_174637_.getUseItemRemainingTicks()) / 20.0F;
+                        return entity.getUseItem() != stack ? 0.0F
+                                : (float) (stack.getUseDuration() - entity.getUseItemRemainingTicks()) / 20.0F;
                     }
                 });
         ItemProperties.register(item.get(), new ResourceLocation("pulling"),
