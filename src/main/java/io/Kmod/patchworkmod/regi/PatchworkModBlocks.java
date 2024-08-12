@@ -17,7 +17,6 @@ public class PatchworkModBlocks {
     }
     public static class BlockItems{
         public static final DeferredRegister<Item> BLOCK_ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Patchworkmod.MODID);
-        public static final RegistryObject<Item> COMPRESSED_COBBLESTONE = BLOCK_ITEMS.register("compressed_cobblestone"
-                , () -> new BlockItem(Blocks.COMPRESSED_COBBLESTONE.get(), new Item.Properties().stacksTo(64)));
+        public static final RegistryObject<Item> COMPRESSED_COBBLESTONE = BLOCK_ITEMS.register("compressed_cobblestone", () -> new BlockItem(Blocks.COMPRESSED_COBBLESTONE.get(), new Item.Properties()));
     }
 }
