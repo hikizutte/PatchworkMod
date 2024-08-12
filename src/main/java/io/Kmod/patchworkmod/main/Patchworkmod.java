@@ -1,6 +1,7 @@
 package io.Kmod.patchworkmod.main;
 
 import com.mojang.logging.LogUtils;
+import io.Kmod.patchworkmod.regi.PatchworkModBlocks;
 import io.Kmod.patchworkmod.regi.PatchworkModItems;
 import io.Kmod.patchworkmod.regi.tab.PatchworkModTab;
 import net.minecraft.client.Minecraft;
@@ -33,6 +34,9 @@ public class Patchworkmod {
         //アイテム登録の設定
         PatchworkModItems.ITEMS.register(PATCHWORKMOD_EVENT_BUS);
         PatchworkModItems.BOWS.register(PATCHWORKMOD_EVENT_BUS);
+        //ブロックアイテム登録の設定
+        PatchworkModBlocks.Blocks.BLOCKS.register(PATCHWORKMOD_EVENT_BUS);
+        PatchworkModBlocks.BlockItems.BLOCK_ITEMS.register(PATCHWORKMOD_EVENT_BUS);
         //クリエイティブタブの追加
         PatchworkModTab.MOD_TABS.register(PATCHWORKMOD_EVENT_BUS);
     }

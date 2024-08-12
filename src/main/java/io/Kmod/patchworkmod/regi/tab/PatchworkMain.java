@@ -1,12 +1,14 @@
 package io.Kmod.patchworkmod.regi.tab;
 
+import io.Kmod.patchworkmod.regi.PatchworkModBlocks;
 import io.Kmod.patchworkmod.regi.PatchworkModItems;
 import net.minecraft.world.item.Item;
 
 public class PatchworkMain {
 
     public static final Item[] items = {
-            PatchworkModItems.OBSIDIAN_INGOT.get()
+            PatchworkModItems.OBSIDIAN_INGOT.get(),
+            PatchworkModBlocks.BlockItems.COMPRESSED_COBBLESTONE.get()
     };
 
     public static final Item[] tools = {
