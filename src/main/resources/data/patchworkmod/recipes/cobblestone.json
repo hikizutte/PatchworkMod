@@ -7,7 +7,7 @@
     }
   ],
   "result": {
-    "id": "minecraft:cobblestone",
+    "item": "minecraft:cobblestone",
     "count": 9
   }
 }
