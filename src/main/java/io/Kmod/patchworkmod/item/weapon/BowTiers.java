@@ -5,7 +5,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 
 public enum BowTiers implements BowTier{
 
-    OBSIDIAN(384 * 12, 1f, 5, Ingredient.of(PatchworkModItems.OBSIDIAN_INGOT.get()));
+    OBSIDIAN(384 * 12, 1f, 7, Ingredient.of(PatchworkModItems.OBSIDIAN_INGOT.get()));
 
     private final int durability;
     private final float damageBonus;

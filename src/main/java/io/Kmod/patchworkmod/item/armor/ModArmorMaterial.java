@@ -13,7 +13,7 @@ import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterial implements ArmorMaterial {
-    OBSIDIAN("obsidian", 52, new int[]{8,10,9,7},5,SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 0.5f, ()-> Ingredient.of(PatchworkModItems.OBSIDIAN_INGOT.get()));
+    OBSIDIAN("obsidian", 40, new int[]{4,9,8,4},7,SoundEvents.ARMOR_EQUIP_NETHERITE, 1f, 0.2f, ()-> Ingredient.of(PatchworkModItems.OBSIDIAN_INGOT.get()));
 
     private final String name;
     private final int durabilityMultiplier;

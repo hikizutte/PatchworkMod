@@ -8,10 +8,8 @@ import io.Kmod.patchworkmod.regi.PatchworkModItems;
 
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 @Mod.EventBusSubscriber(modid = Patchworkmod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
@@ -21,6 +19,7 @@ public class ModClient {
     public static void setup(final FMLClientSetupEvent event) {
         event.enqueueWork(() -> PatchworkModItems.BOWS.getEntries().forEach(ModClient::registerBowResourceLocations));
     }
+/*
 
     @SubscribeEvent
     public static void buildCreativeModeTabContents(BuildCreativeModeTabContentsEvent event) {
@@ -28,6 +27,7 @@ public class ModClient {
             PatchworkModItems.BOWS.getEntries().forEach(bow -> event.accept(bow.get()));
         }
     }
+*/
 
     private static void registerBowResourceLocations(RegistryObject<Item> item) {
         ItemProperties.register(item.get(), new ResourceLocation("pull"),
