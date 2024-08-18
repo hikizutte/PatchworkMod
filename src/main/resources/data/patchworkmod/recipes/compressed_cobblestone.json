@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:crafting_shapeless",
+  "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
     "###",
@@ -12,6 +12,7 @@
     }
   },
   "result": {
-    "item": "patchworkmod:compressed_cobblestone"
+    "item": "patchworkmod:compressed_cobblestone",
+    "count": 1
   }
 }
