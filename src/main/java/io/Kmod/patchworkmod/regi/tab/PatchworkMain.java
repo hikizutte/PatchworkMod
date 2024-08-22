@@ -10,7 +10,9 @@ public class PatchworkMain {
             PatchworkModItems.OBSIDIAN_INGOT.get(),
             PatchworkModBlocks.BlockItems.COMPRESSED_COBBLESTONE.get(),
             PatchworkModBlocks.BlockItems.COMPRESSED_IRON_BLOCK.get(),
-            PatchworkModBlocks.BlockItems.COMPRESSED_GOLD_BLOCK.get()
+            PatchworkModBlocks.BlockItems.COMPRESSED_GOLD_BLOCK.get(),
+            PatchworkModBlocks.BlockItems.COMPRESSED_DIAMOND_BLOCK.get(),
+            PatchworkModBlocks.BlockItems.COMPRESSED_EMERALD_BLOCK.get()
     };
 
     public static final Item[] tools = {

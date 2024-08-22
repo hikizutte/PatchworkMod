@@ -2,6 +2,8 @@
   "values": [
     "patchworkmod:compressed_cobblestone",
     "patchworkmod:compressed_iron_block",
-    "patchworkmod:compressed_gold_block"
+    "patchworkmod:compressed_gold_block",
+    "patchworkmod:compressed_diamond_block",
+    "patchworkmod:compressed_emerald_block"
   ]
 }

@@ -18,5 +18,7 @@
 
   "block.patchworkmod.compressed_cobblestone" : "圧縮丸石",
   "block.patchworkmod.compressed_iron_block" : "圧縮鉄ブロック",
-  "block.patchworkmod.compressed_gold_block" : "圧縮金ブロック"
+  "block.patchworkmod.compressed_gold_block" : "圧縮金ブロック",
+  "block.patchworkmod.compressed_diamond_block" : "圧縮ダイヤモンドブロック",
+  "block.patchworkmod.compressed_emerald_block" : "圧縮エメラルドブロック"
 }
