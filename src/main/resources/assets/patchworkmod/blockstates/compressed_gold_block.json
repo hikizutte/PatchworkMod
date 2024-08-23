@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "patchworkmod:block/compressed_gold_block"
+    }
+  }
+}
