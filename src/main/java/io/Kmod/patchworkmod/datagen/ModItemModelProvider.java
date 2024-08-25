@@ -28,11 +28,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(PatchworkModItems.OBSIDIAN_CHESTPLATE);
         simpleItem(PatchworkModItems.OBSIDIAN_LEGGINGS);
         simpleItem(PatchworkModItems.OBSIDIAN_BOOTS);
+
         simpleItem(PatchworkModItems.OBSIDIAN_BOW);
 
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(Patchworkmod.MODID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder simpleBowItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(Patchworkmod.MODID,"item/" + item.getId().getPath()));
