@@ -39,9 +39,12 @@ public class ModItemModelProvider extends ItemModelProvider {
                 new ResourceLocation(Patchworkmod.MODID,"item/" + item.getId().getPath()));
     }
 
-    private ItemModelBuilder simpleBowItem(RegistryObject<Item> item) {
+    private ItemModelBuilder.OverrideBuilder simpleBowItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(Patchworkmod.MODID,"item/" + item.getId().getPath()));
+                new ResourceLocation("item/bow")).texture("layer0",
+                        new ResourceLocation(Patchworkmod.MODID,"item/" + item.getId().getPath())).override()
+                .predicate(new ResourceLocation(Patchworkmod.MODID, "item/" + item.getId().getPath() + "_pulling_0"), 0)
+                .predicate(new ResourceLocation(Patchworkmod.MODID, "item/" + item.getId().getPath() + "_pulling_1"), 1)
+                .predicate(new ResourceLocation(Patchworkmod.MODID, "item/" + item.getId().getPath() + "_pulling_2"), 2);
     }
 }
