@@ -1,6 +1,0 @@
-{
-  "parent": "patchworkmod:item/obsidian_bow",
-  "textures": {
-    "layer0": "patchworkmod:item/obsidian_bow_pulling_2"
-  }
-}

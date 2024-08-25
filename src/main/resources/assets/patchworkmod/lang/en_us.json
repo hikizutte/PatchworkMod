@@ -16,5 +16,9 @@
   "item.patchworkmod.obsidian_boots" : "Obsidian Boots",
   "item.patchworkmod.obsidian_bow" : "Obsidian Bow",
 
-  "block.patchworkmod.compressed_cobblestone" : "Compressed Cobblestone"
+  "block.patchworkmod.compressed_cobblestone" : "Compressed Cobblestone",
+  "block.patchworkmod.compressed_iron_block" : "Compressed Block of Iron",
+  "block.patchworkmod.compressed_gold_block" : "Compressed Block of Gold",
+  "block.patchworkmod.compressed_diamond_block" : "Compressed Block of Diamond",
+  "block.patchworkmod.compressed_emerald_block" : "Compressed Block of Emerald"
 }
