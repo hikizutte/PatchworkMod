@@ -30,11 +30,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(PatchworkModItems.OBSIDIAN_BOOTS);
         simpleItem(PatchworkModItems.OBSIDIAN_BOW);
 
-        simpleItem(PatchworkModBlocks.BlockItems.COMPRESSED_COBBLESTONE);
-        simpleItem(PatchworkModBlocks.BlockItems.COMPRESSED_IRON_BLOCK);
-        simpleItem(PatchworkModBlocks.BlockItems.COMPRESSED_GOLD_BLOCK);
-        simpleItem(PatchworkModBlocks.BlockItems.COMPRESSED_DIAMOND_BLOCK);
-        simpleItem(PatchworkModBlocks.BlockItems.COMPRESSED_EMERALD_BLOCK);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
